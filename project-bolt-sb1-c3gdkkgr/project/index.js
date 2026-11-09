@@ -1,4 +1,5 @@
-require('dotenv').config();
+require('dotenv').config(); const http = require('http');
+http.createServer((req, res) => { res.write('Bot is online!'); res.end(); }).listen(process.env.PORT || 10000);
 
 const { Client, GatewayIntentBits, Events } = require('discord.js');
 
